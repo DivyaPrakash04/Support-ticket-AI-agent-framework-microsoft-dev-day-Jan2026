@@ -1,74 +1,122 @@
-# Agent Framework Dev Day
+# Support-ticket-AI-agent-framework-microsoft-dev-day-Jan2026
+Support ticketing automation and my completed labs from Microsoft Agent Framework Dev Day in Jan 2026 — including support ticketing automation, MCP servers/clients, workflow patterns, and Agentic RAG implementations in .NET and Python.
+**hosted by Akumina, in association with Microsoft, at the Microsoft office.**  
+This gives your repo a polished, authentic provenance without sounding promotional.
 
-Agent Framework Dev Day is a full-day, instructor-led series of labs that showcase the [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) and adjacent tooling across both .NET and Python ecosystems.
+Here’s an updated version of the README section that incorporates those details cleanly and professionally.
+---
 
-## Agenda
+# **Agent Framework Dev Day 2026 — Completed Labs**
 
-- Part 1 – Overview, first access (Lab 0), safety
-- Part 2 – Workflow patterns and Model Context Protocol (MCP)
-- Part 3 – Retrieval-Augmented Generation (RAG) and Agentic RAG
+This repository contains my completed hands‑on labs from **Agent Framework Dev Day 2026**, a learning workshop **hosted by Akumina in association with Microsoft** at the **Microsoft office**.  
+The session explored the Microsoft Agent Framework across both **.NET** and **Python**, with deep dives into **MCP**, **workflow patterns**, **RAG**, and **Agentic RAG**.  
+It also includes my implementation of **support ticketing automation** using the Agent Framework.
 
-## Prerequisites
+---
 
-### Core workshop setup
-- [Git](https://git-scm.com/downloads) and [Github login](https://github.com)
-- [Visual Studio Code](https://code.visualstudio.com/download) with the recommended extensions listed in [VSCode-Extensions.md](VSCode-Extensions.md)
-- Azure subscription with access to Azure OpenAI and Azure AI Search resources, plus any API keys issued by the instructors
-- Stable internet connection for package restores and Azure access
+## **Workshop Overview**
 
-### .NET track prerequisites
-- [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download) (labs rely on .NET 10 features and templates)
-- Latest [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) or [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) plus the .NET runtime debugging workload in VS Code
-- Follow the environment notes in [labs/dotnet/README.md](labs/dotnet/README.md) for per-lab debugging tips
+The workshop was structured into three major parts:
 
-### Python track prerequisites
-- [Python 3.13 and PIP](https://www.python.org/downloads/) (exact version or newer point releases) with `pip` and `venv`
-- Create and activate a virtual environment under `labs/python`, then install shared dependencies via `pip install -r labs/python/requirements.txt`
-- Review [labs/python/README.md](labs/python/README.md) for detailed shell-specific setup steps
+- **Part 1:** First access, environment setup, and safety fundamentals  
+- **Part 2:** Workflow patterns and Model Context Protocol (MCP)  
+- **Part 3:** Retrieval‑Augmented Generation (RAG) and Agentic RAG  
 
-## Repository layout
+Each module included guided exercises, reference solutions, and notebooks for deeper exploration.
 
-- [labs/dotnet](labs/dotnet) – C# solutions covering hello-world onboarding through MCP, workflows, and Agentic RAG. Every lab folder contains both `/begin` (exercise) and `/solution` (reference) subfolders.
-- [labs/python](labs/python) – Python equivalents for MCP, workflow, and RAG scenarios, plus notebooks to reinforce concepts.
-- [tools](tools) – Utility projects (for example, LabKey encrypters) that support the hands-on exercises.
-- [VSCode-Extensions.md](VSCode-Extensions.md) – Canonical list of extensions, themes, and settings the instructors will reference.
+---
 
-## .NET lab index
+## **Prerequisites**
 
-| Lab | Focus | Supplemental docs |
-| --- | ------ | ------------------ |
-| lab0-hello-world | Validate SDK install, run first Agent Framework project, explore solution vs. begin folders | [labs/dotnet/lab0-hello-world/README.md](labs/dotnet/lab0-hello-world/README.md) |
-| lab1-basic-training | Core agent patterns and incremental exercises (instructions inline in `begin/`; no README yet) | _README not provided_ |
-| lab2-mcp | Build local/remote MCP servers, run `mcp-concepts.ipynb`, wire up `McpAgentClient` | [labs/dotnet/lab2-mcp/README.md](labs/dotnet/lab2-mcp/README.md) |
-| lab2-workflow | Implement sequential, concurrent, and human-in-the-loop workflows with `Microsoft.Agents.AI.Workflows` | [labs/dotnet/lab2-workflow/README.md](labs/dotnet/lab2-workflow/README.md) |
-| lab3-agentic-rag | Agentic RAG scenarios with Azure AI Search and Agent Framework orchestration | [labs/dotnet/lab3-agentic-rag/begin/README.md](labs/dotnet/lab3-agentic-rag/begin/README.md) |
+### **Core Setup**
+- Git + GitHub account  
+- Visual Studio Code with recommended extensions (see `VSCode-Extensions.md`)  
+- Azure subscription with access to Azure OpenAI and Azure AI Search  
+- Stable internet connection  
 
-> Each .NET lab also includes notebooks (for example, `mcp-concepts.ipynb`, `workflow-concepts.ipynb`) that can be launched directly from VS Code for guided exploration.
+### **.NET Track**
+- .NET 10 SDK  
+- C# Dev Kit or C# extension for VS Code  
+- Per‑lab debugging notes under `labs/dotnet/`  
 
-## Python lab index
+### **Python Track**
+- Python 3.13  
+- `pip` and `venv`  
+- Install dependencies:  
+  ```
+  pip install -r labs/python/requirements.txt
+  ```  
+- Additional setup notes under `labs/python/`  
 
-| Lab | Focus | Supplemental docs |
-| --- | ------ | ------------------ |
-| lab0-hello-world | Environment smoke test and first Python agent (instructions inside `begin/`) | _README not provided_ |
-| lab1-safety | Progressive exercises reinforcing Agent Framework primitives (see `begin/` folder) | _README not provided_ |
-| lab2-mcp | Python MCP servers/clients plus `mcp-concepts.ipynb` | [labs/python/lab2-mcp/README.md](labs/python/lab2-mcp/README.md) |
-| lab2-workflow | Workflow patterns implemented with Python executors and notebooks | [labs/python/lab2-workflow/README.md](labs/python/lab2-workflow/README.md) |
-| lab3-agentic-rag | Agentic RAG build-out leveraging Azure AI Search tooling | [labs/python/lab3-agentic-rag/begin/README.md](labs/python/lab3-agentic-rag/begin/README.md) |
+---
 
-## Additional references
+## **Repository Layout**
 
-- Keep the [VSCode-Extensions.md](VSCode-Extensions.md) list close by when setting up your editor profiles.
-- Most labs provide `EXERCISES.md` within the `begin/` folder; switch to the `solution/` folder whenever you need a working reference.
-- Interactive notebooks live alongside the labs (for example, `labs/dotnet/lab2-mcp/begin/mcp-concepts.ipynb`). Run them in VS Code or Jupyter to validate your environment before coding.
+```
+labs/
+  dotnet/
+    lab0-hello-world/
+    lab1-basic-training/
+    lab2-mcp/
+    lab2-workflow/
+    lab3-agentic-rag/
+  python/
+    lab0-hello-world/
+    lab1-safety/
+    lab2-mcp/
+    lab2-workflow/
+    lab3-agentic-rag/
+tools/
+VSCode-Extensions.md
+```
 
-## Presented by
+- **dotnet/** — C# labs covering onboarding, MCP, workflows, and Agentic RAG  
+- **python/** — Python equivalents with notebooks and exercises  
+- **tools/** — Utility projects used throughout the labs  
+- **VSCode-Extensions.md** — Editor setup recommended during the workshop  
 
-- [Bill Wilder](https://www.linkedin.com/in/billwilder/)
-- [Jason Haley](https://www.linkedin.com/in/jason-a-haley/)
-- [Udaiappa Ramachandran](https://www.linkedin.com/in/udair/)
+---
 
-## Sponsored by
+## **Lab Index**
 
-| Date | Location | Sponsors |
-| --- | --- | --- |
-| 16-Jan-2026 | Burlington | Microsoft, Akumina |
+### **.NET Labs**
+| Lab | Focus |
+| --- | ------ |
+| lab0-hello-world | Validate environment and run the first Agent Framework project |
+| lab1-basic-training | Core agent patterns and incremental exercises |
+| lab2-mcp | Build MCP servers/clients and explore MCP concepts |
+| lab2-workflow | Implement sequential, concurrent, and human‑in‑the‑loop workflows |
+| lab3-agentic-rag | Agentic RAG with Azure AI Search and workflow orchestration |
+
+### **Python Labs**
+| Lab | Focus |
+| --- | ------ |
+| lab0-hello-world | Environment smoke test and first Python agent |
+| lab1-safety | Exercises reinforcing Agent Framework primitives |
+| lab2-mcp | MCP servers/clients and notebook‑based exploration |
+| lab2-workflow | Workflow patterns using Python executors |
+| lab3-agentic-rag | Agentic RAG using Azure AI Search |
+
+---
+
+## **Support Ticketing Automation**
+
+This repository also includes my implementation of a **support ticketing automation agent**, demonstrating:
+
+- Multi‑step workflow orchestration  
+- Tool calling and context management  
+- Integration with Azure AI Search  
+- Practical use of Agentic RAG patterns  
+
+---
+
+## **Notes**
+
+- A Python‑focused `.gitignore` is included to keep the repo clean.  
+- This repository is for learning and demonstration purposes based on the Dev Day workshop hosted by **Akumina + Microsoft**.
+- Location | Sponsors |
+  | -------- | -------- |
+  | Burlington | Microsoft, Akumina |
+- Notebooks (`*.ipynb`) are included for MCP, workflows, and RAG concepts and can be run directly in VS Code.
+
+---

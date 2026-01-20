@@ -132,7 +132,7 @@ async def main() -> None:
     # --------- FIRST STEP ----------
     # ASK LAB INSTRUCTOR FOR THE PASSWORD
     # password = "\U0001d49c\U0001d4ae\U0001d4a6 \U0001d4b4\U0001d4aa\U0001d4b0\u211b \u2112\U0001d49c\u212c \u2110\U0001d4a9\U0001d4ae\U0001d4af\u211b\U0001d4b0\U0001d49e\U0001d4af\U0001d4aa\u211b \u2131\U0001d4aa\u211b \U0001d4af\u210b\u2130 \U0001d4ab\U0001d49c\U0001d4ae\U0001d4ae\U0001d4b2\U0001d4aa\u211b\U0001d49f"
-    password = "𝒜𝒮𝒦 𝒴𝒪𝒰ℛ ℒ𝒜ℬ ℐ𝒩𝒮𝒯ℛ𝒰𝒞𝒯𝒪ℛ ℱ𝒪ℛ 𝒯ℋℰ 𝒫𝒜𝒮𝒮𝒲𝒪ℛ𝒟"
+    password = "Patriots16-Chargers3-TexansNext"
 
     # LAB STEP 1: CHANGE THE PASSWORD
     # password = "replace this with the real password given by your lab instructor"
